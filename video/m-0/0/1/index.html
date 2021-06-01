@@ -273,8 +273,334 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     </div>
                                 </div>
                             </div>
-		    <div class="video-top">
-    <div class="intro-banner">
-        <div>You are currently using the legacy video player.</div>
-        <div><a class="btn btn-sm btn-dark" href="/videos/m-0">Switch to the html5 video player</a></div>
+<div class="video-player-meta">
+                                <div class="video-title"></div>
+                                <div class="video-creator"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="context-menu" class="hidden">
+                        <div class="click-disabler"></div>
+                        <ul>
+                            <li data-player-action="play">Play / Pause</li>
+                            <li class="divider"></li>
+                            <li data-player-action="copyUrl">Copy video URL</li>
+                            <li data-player-action="copyEmbedCode">Copy embed code</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sidebar col-sm-5 hidden-xs">
+                    <div class="row panel-container">
+                        <div class="setting-panels">
+                            <div class="main-panel">
+                                <div class="setting-title"><span class="glyph-pro glyph-show-thumbnails_with_lines"></span> Settings</div>
+                                <ul class="setting-items">
+    
+    
+    
+    
+    
+    
+                                    </ul>
+                            </div>
+                            <div class="sub-panel">
+                                <div class="panel-item logo-panel">
+                                    <div class="panel-title">
+                                        <span class="glyph-pro glyph-chevron-left"></span><span class="text">Logo</span>
+                                    </div>
+                                    <div class="list-container">
+                                        <div class="panel-info">
+                                            Want to use a brand new logo?<br/>
+                                            <a href="https://ga.vyond.com/account/logo">
+                                                Go to Account settings &gt;
+                                            </a>
+                                        </div>
+                                        <div class="default-logo-list-container">
+                                            <ul class="logo-list">
+                                                <li data-watermark="0dhteqDBt5nY"><img src="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/img/watermark/no_watermark.png"></li>
+                                                <li data-watermark="0vTLbQy9hG7k"><img src="https://d3v4eglovri8yt.cloudfront.net/static/add8e214e09bd155/go/img/watermark/vyond.png"></li>
+                                            </ul>
+                                        </div>
+                                        <div class="logo-list-container">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-item history-panel">
+                                    <div class="panel-title">
+                                        <span class="glyph-pro glyph-chevron-left"></span><span class="text">Revision history</span>
+                                    </div>
+                                    <div class="list-container"></div>
+                                </div>
+                                <div class="panel-item notes-panel">
+                                    <div class="panel-title-static">
+                                        <span class="glyph-pro glyph-blog"></span><span class="text">Notes</span>
+                                    </div>
+                                    <div class="list-container"></div>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+<div class="video-top">
+    <div class="intro-banner">
+        <div>This html 5 video player is in process right now and might not work as expected.</div>
+        <div><a class="btn btn-sm btn-dark" href="/video/m-0/0/1">Switch to the legacy video player</a></div>
+    </div>
+
+    <div itemprop="video" itemscope itemtype="http://schema.org/VideoObject">
+        <link itemprop="url" href="https://josephcrosmanplays532.github.io/videos/m-0">
+        <meta itemprop="name" content="Test">
+        <meta itemprop="description" content="this video is ment for testing out this video player.">
+        <meta itemprop="duration" content="PT0H0M12S">
+        <meta itemprop="thumbnailUrl" content="https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/1087/5965087/24186842.jpg">
+        <meta itemprop="uploadDate" content="2015-07-03T12:50:44-0400">
+        <meta itemprop="embedURL" content="https://josephcrosmanplays532.github.io/player/embed/m-0">
+        <meta itemprop="playerType" content="HTML5 Flash">
+        <meta itemprop="videoQuality" content="HD">
+        <meta itemprop="height" content="720">
+        <meta itemprop="width" content="1280">
+    </div>
+
+    <div class="settings privacy private hidden-xs">
+        <div class="container">
+            <div class="row settings-row">
+                <div class="col-sm-9">
+                    <div class="settings-label hidden-xs">Share</div>
+                    <div class="using-draft"><span class="icon glyph-pro glyph-lock inline"></span>Draft</div>
+                    <div class="using-private"><span class="icon glyph-pro glyph-lock inline"></span>Private</div>
+                    <div class="using-password-protected"><span class="icon glyph-pro glyph-lock inline"></span>Password-Protected</div>
+                </div>
+            </div>
+        </div>
+        <div id="autosave-overlay" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button class="close" type="button" data-dismiss="modal" aria-hidden="true">×</button>
+                        <h3 class="modal-title">Your video was autosaved</h3>
+                    </div>
+                    <div class="modal-body">
+                        <span class="autosave-message"></span>
+                        <a class="history-toggle" data-dismiss="modal">View revision history.</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-default text-uppercase" onclick="fullscreenStudio('/videomaker/full/editcheck/m-0');">Manually saved</button>
+                        <button class="load-autosave btn btn-default btn-orange text-uppercase">Load autosaved</button>
+                    </div
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="settings headline">
+        <div class="container">
+            <div class="settings-row">
+            <h1 class="video-title visible-xs">Test</h1>
+            <p>Created by <a href="/users/josephanimate2021" title="Joseph Animate 2021">Joseph Animate 2021</a></p>
+
+        </div>
+        </div>
+    </div>
+
+
+    <div class="settings social grey">
+        <div class="container">
+            <div class="settings-row">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input id="copyable-url" class="form-control gtm-ga-event" type="url" readonly="true" value="https://josephcrosmanplays532.github.io/videos/m-0?utm_source=linkshare&amp;utm_medium=linkshare&amp;utm_campaign=usercontent" onclick="this.select()" data-gtmv-action="Share - Click text field" data-gtmv-category="" data-gtmv-label="24186842 - Guest">
+                        </div>
+                        <div class="col-sm-6 socials-icons">
+                            <ul class="socials-sharing">
+                                <li>
+                                    <a class="glyph-pro glyph-embed-close" data-remote="/ajax/getEmbedOverlay/m-0" data-action="video-embed" title="Embed code">
+                                        <span class="sr-only sr-only-focusable">Embed code</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="export disabled" id="export">
+        <div class="container">
+            <div class="title-row">
+                <h3 class="title">Export</h3>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="download-export" data-type="Download">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Download<br><span class="text-uppercase">Video</span></div>
+                        <div class="description">
+                            Up to 1080p Full HD.                            <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank"><br>View plans</a>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="gif-export" data-type="Gif">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Download<br><span class="text-uppercase">animated GIF</span></div>
+                        <div class="description">
+                            Paste your video clip anywhere as a GIF!       <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="youtube-export" data-type="Youtube" data-connected="true">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">YouTube</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.               <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="wistia-export" data-type="Wistia" data-connected="false">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">Wistia</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.               <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                            <div class="for-connect">Connect</div>
+                            <div class="for-connected">Connected</div>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="vidyard-export" data-type="Vidyard" data-connected="false">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">Vidyard</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.               <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                            <div class="for-connect">Connect</div>
+                            <div class="for-connected">Connected</div>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="vimeo-export" data-type="Vimeo" data-connected="false">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">Vimeo</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.               <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                            <div class="for-connect">Connect</div>
+                            <div class="for-connected">Connected</div>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="vzaar-export" data-type="Vzaar" data-connected="false">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">Vzaar</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.                           <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                            <div class="for-connect">Connect</div>
+                            <div class="for-connected">Connected</div>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="export-option" id="wevideo-export" data-type="WeVideo" data-connected="false">
+                        <div class="icon"></div>
+                        <button class="toggle-trigger"><span class="glyph-halfling glyph-chevron-down"></span></button>
+                        <div class="option-name">Export to<br><span class="text-uppercase">WeVideo</span></div>
+                        <div class="description for-unavailable">
+                            Available to subscribers only.                            <a class="for-unavailable" href="https://www.vyond.com/pricing" target="_blank">View plans</a>
+                        </div>
+                        <div class="description for-available">
+                            <div class="for-connect">Connect</div>
+                            <div class="for-connected">Connected</div>
+                        </div>
+                        <div class="toggle-content"></div>
+                        <div class="spin"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="shortcut-instruction hidden-xs hidden-sm">
+        <div class="container">
+            <ul>
+                <li>
+                    <div class="key play"></div>
+                    <div class="name">Play / Pause</div>
+                </li>
+                <li>
+                    <div class="key back-forward"></div>
+                    <div class="name">Back/forward 5 secs</div>
+                </li>
+                <li>
+                    <div class="key full-screen"></div>
+                    <div class="name">Full Screen</div>
+                </li>
+                <li>
+                    <div class="key exit-full-screen"></div>
+                    <div class="name">Exit Full Screen</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+	<footer class="site-footer">
+    <div class="container">
+        Vyond&trade; is a trademark of GoAnimate, Inc. &copy; 2021 GoAnimate, Inc. <a href="https://www.vyond.com/terms">Terms of Service</a> | <a href="https://www.vyond.com/privacy">Privacy Policy</a>
+    </div>
+</footer>
+
+
+<div id="studio_container" style="display: none;">
+    <div id="studio_holder"><!-- Full Screen Studio -->
+        <div style="top: 50%; position: relative;">
+            You can't use Vyond because Flash might be disabled. <a href="https://get.adobe.com/flashplayer/">Enable Flash</a>.
+        </div>
+    </div>
+</div>
+
+</div>
+	</body>
+</html>
