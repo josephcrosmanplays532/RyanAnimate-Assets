@@ -1,0 +1,1 @@
+if you want to add a share button to your lvm clone witch requries the ajax folder, just use my ajax folder or if it dosen't work when you type https://josephcrosmanplays532.github.io, just copy my codes and edit them if you want. i don't really mind.
