@@ -24,20 +24,16 @@ header
 header {
 	/* style */
 	background: #1e1e1e;
+	box-shadow: 0 0 0 1px #ff0048, 5px 0 10px 0 #000;
 	color: #fff;
 	text-align: center;
-	padding-bottom: 13px;
+	flex-shrink: 0;
+	/* layout */
+	height: 44px;
 	padding: 0 15px;
 	display: flex;
 	justify-content: space-between;
-	flex-shrink: 0;
-}
-/* makes the header a set height when the window is 887px wide */
-@media (min-width: 887px) {
-	header {
-		padding-bottom: auto;
-		height: 44px;
-	}
+	z-index: 1; /* keeps the header in front */
 }
 #logo {
 	margin-top: 4px;
@@ -50,10 +46,11 @@ header {
 	font-size: 14px;
 	text-decoration: none;
 	color: #fff;
-	border-radius: 6px;
+	border-radius: 3px;
+	transition: 0.08s ease-in-out;
 	/* layout */
 	display: inline-block;
-	padding: 5px 10px;
+	padding: 4px 10px;
 	margin: 6px 5px;
 }
 .button_big:hover,
@@ -61,24 +58,23 @@ header {
 	cursor: pointer;
 }
 /* small buttons */
-.button_small       { background: #333 }
+.button_small       { background: #333; border: 1px solid #555; }
 .button_small:hover { background: #444; color: #d85e27 }
 /* big buttons */
 .button_big {
-	background-color: #d85e27;
+	background: #d85e27;
 	width: 160px;
 }
-.button_big:hover {
-	text-decoration: underline;
-}
+.button_big:hover { text-decoration: underline; }
+
 
 /**
 header dropdowns
 **/
 /* change button margin/padding to fit dropdown */
 .dropdown_contain { padding: 0; margin: 6px 5px; }
-.dropdown_button { margin: 0; padding: 5px 10px; }
-.upload_button { margin: 0; padding: 5px 25px; }
+.dropdown_button { margin: 0; padding: 4px 10px; }
+.upload_button { margin: 0; padding: 4px 25px; }
 /* make dropdown appear on hover */
 .dropdown_contain:hover>nav {
 	display: block;
@@ -120,7 +116,7 @@ header dropdowns
 	font-size: 15px;
 	/* layout */
 	margin:0;
-	padding:2px 20px;
+	padding: 2px 20px;
 }
 .dropdown_menu>hr {
 	border: 1px solid #222;
@@ -138,19 +134,24 @@ a {
 /**
 footer
 **/
-footer{
+footer {
+	/* style */
 	background: #1e1e1e;
+	box-shadow: 0 0 0 1px #ff0048, 5px 0 10px 0 #000;
+	/* layout */
 	margin-top: auto; /* footer at the foot */
 	display: flex;
 	justify-content: space-between;
 	flex-shrink: 0;
 }
-footer nav { margin:5px 10px}
+footer nav { margin: 5px 10px }
 /* links */
-footer a {
+footer a, footer span {
 	color: #fff;
-	text-decoration:none;
+	text-decoration: none;
 	margin: 0 10px;
+}
+footer a {
 	font-weight: bold;
 }
 footer a:hover {
