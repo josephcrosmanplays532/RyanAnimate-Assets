@@ -72,7 +72,6 @@ header {
 	text-decoration: underline;
 }
 
-
 /**
 header dropdowns
 **/
@@ -128,6 +127,13 @@ header dropdowns
 	margin: 10px 0;
 }
 
+/**
+main content
+**/
+main { padding: 20px 40px }
+a {
+	color: #4d4daf
+}
 
 /**
 footer
@@ -157,7 +163,7 @@ font importing
 @font-face {
 	font-family: 'Sailec';
 	font-weight: 100;
-	src: url('.../fonts/Sailec-Thin.woff') format('woff');
+	src: url('../fonts/Sailec-Thin.woff') format('woff');
 }
 
 @font-face {
