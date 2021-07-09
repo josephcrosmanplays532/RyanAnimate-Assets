@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
-<title>Video Studio | Joseph Animate Awsome Domain</title>
+<title>Video Studio</title>
 <link href="/pages/css/modern-normalize.css" rel="stylesheet" type="text/css">
 <link href="/pages/css/global.css" rel="stylesheet" type="text/css">
 <link href="/pages/css/swf.css" rel="stylesheet" type="text/css">
 <meta name="title" content="Video Studio"/>
-<meta name="description" content="The Recreated Vyond Video Maker lets You make a video for YouTube for free! Drag &amp; drop or type &amp; go.  It's Fast, Fun, Easy and Free -  Joseph Animate Awsome Domain!"/>
+<meta name="description" content="The Video Maker lets You make a video for YouTube for free! Drag &amp; drop or type &amp; go.  It's Fast, Fun, Easy and Free -  PHPWrapper!"/>
 
 <meta name="robots" content="noindex, nofollow"/>
 <meta name="google-site-verification" content="Vta3YTpj6Kx6u4p-EzeMArY0alNItkyUYYMvNM8seVI"/>
@@ -23,12 +23,11 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 <body>
 <header>
 	<a href="/">
-		<h1 style="margin:0"><img id="logo" src="/static/477/go/img/business_video/home/list_logo.png" alt="Joseph Animate Awsome Domain"></h1>
+		<h1 style="margin:0"><img id="logo" src="/static/477/go/img/business_video/home/list_logo.png" alt="Joseph Animate Awsome Domain"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="back" onclick="creationType()" style="display: none">Back</a>
-		<a class="button_small" id="ccbrowser" href="/charactercreator/">Create a Character</a>
-		<a class="button_big" id="videomaker" href="/create">Create</a>
+                <a href="/charactercreator/" class="button_small">MAKE A CHARACTER</a>
+		<a href="/go_full" class="button_big">MAKE A VIDEO</a>
 	</nav>
 </header>
 <iframe style="display:none" name="dummy"></iframe>
@@ -111,7 +110,12 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 </script>
 <!-- Video Studio -->
 <div id="studio-container">
-	 <object id="obj" data="https://josephcrosmanplays532.github.io/animation/414827163ad4eb60/go_full.swf" type="application/x-shockwave-flash" width="100%" height="100%"><param name="flashvars" value="apiserver=https%3A%2F%2Fvyond2018.herokuapp.com%2F&storePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstore%2F3a981f5cb2739137%2F%3Cstore%3E&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https%3A%2F%2Fjosephcrosmanplays532.github.io%2Fstatic%2Fad44370a650793d9%2F%3Cclient_theme%3E&themeId=business&tlang=en_US&presaveId=m-2&goteam_draft_only=1&isWide=1&nextUrl=%2Fpages%2Fhtml%2Flist.html&tray=custom"> <param name="allowScriptAccess" value="always"></object>
+	<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf" type="application/x-shockwave-flash" id="Studio" width="100%" height="100%">
+	<!-- The flashvars are a huge mess, have fun looking at them. :) -->
+	<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&movieId=&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&presaveId=m-3&goteam_draft_only=1&isWide=1&collab=0&nextUrl=./browse.php&tray=custom">
+	<param name="allowScriptAccess" value="always">
+	<param name="allowFullScreen" value="true">
+        </object>
 </div>
 <div id="import_popup_container" style="display:none">
 	<div id="import_popup">
@@ -135,17 +139,17 @@ html, body, #studio-container {margin:0;padding:0;width:100%;height:100%;overflo
 	<div id="preview_popup">
 		<h2 id="preview-video">Preview Video</h2>
 		<p class="close-button" onclick="hidePreviewer()">X</p>
-		<object data="https://josephcrosmanplays532.github.io/animation/414827163ad4eb60/player.swf" type="application/x-shockwave-flash" id="preview_player">
+		<object data="https://phpwrapper.herokuapp.com/goapi/asset/animation/player.swf" type="application/x-shockwave-flash" id="preview_player">
 			<!-- The flashvars are a huge mess, have fun looking at them. :) -->
-			<param name="flashvars" value="apiserver=https://vyond2018.herokuapp.com/&storePath=https://josephcrosmanplays532.github.io/static/store/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://josephcrosmanplays532.github.io/static/ad44370a650793d9/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=/pages/html/list.html&tray=custom">
+			<param name="flashvars" value="apiserver=/&storePath=https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>&isEmbed=1&ctc=go&ut=60&bs=default&appCode=go&page=&siteId=go&lid=13&isLogin=Y&retut=1&clientThemePath=https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>&themeId=custom&tlang=en_US&isInitFromExternal=1&goteam_draft_only=1&isWide=1&collab=0&startFrame=previewStartFrame&autostart=1&nextUrl=../pages/html/list.html&tray=custom">
 			<param name="allowScriptAccess" value="always">
 			<param name="allowFullScreen" value="true">
 		</object>
-                <a class="button_big" href="#" onclick="hidePreviewer()">Back to editing</a>
+                <a class="button_big" href="#" class="text-uppercase" onclick="hidePreviewer()">Back to editing</a>
 	</div>
 </div>
 <script>
-var so = new SWFObject("https://josephcrosmanplays532.github.io/animation/414827163ad4eb60/go_full.swf", "Studio", "100%", "100%", "10.0.12");
+var so = new SWFObject("https://phpwrapper.herokuapp.com/goapi/asset/animation/go_full.swf", "Studio", "100%", "100%", "10.0.12");
 so.useExpressInstall('/static/libs/expressInstall.swf');
 so.addParam("AllowScriptAccess", "always");
 so.addParam("wmode", "transparent");
@@ -153,7 +157,7 @@ so.addParam("scale", "exactfit");
 so.addParam("allowFullScreen","true");
 
 so.addVariable("apiserver", "https://vyond2018.herokuapp.com/");
-so.addVariable("storePath", "https://josephcrosmanplays532.github.io/static/store/<store>");
+so.addVariable("storePath", "https://phpwrapper.herokuapp.com/goapi/asset/themes/<store>");
 so.addVariable("isEmbed", "1");
 so.addVariable("ctc", "go");
 so.addVariable("ut", "60");
@@ -164,14 +168,14 @@ so.addVariable("siteId", "go");
 so.addVariable("lid", "13");
 so.addVariable("isLogin", "Y");
 so.addVariable("retut", "1");
-so.addVariable("clientThemePath", "https://josephcrosmanplays532.github.io/static/ad44370a650793d9/<client_theme>");
+so.addVariable("clientThemePath", "https://phpwrapper.herokuapp.com/goapi/asset/static/<client_theme>");
 so.addVariable("themeId", "custom");
-so.addVariable("presaveId", "m-2");
+so.addVariable("presaveId", "m-3");
 so.addVariable("movieId", "");
 so.addVariable("goteam_draft_only", "1");
 so.addVariable("isWide", "1");
 so.addVariable("collab", "0");
-so.addVariable("nextUrl", "/pages/html/list.html");
+so.addVariable("nextUrl", "/dashobard/videos");
 so.addVariable("tray", "custom");
 
 
@@ -179,15 +183,10 @@ so.addVariable("tray", "custom");
 
 so.write("studio-container");
 </script>
-<footer style="display:none">
-	<nav id="foot-left">
-		<a>a1.0.2</a>
-		<a href="/faq">FAQ</a>
-		<a href="https://discord.io/goanimate4schools">JosephAnimate2021 offical server</a>
+<footer>
+	<nav id="foot-middle">
+		<a href="https://discord.gg/goanimate">Discord Server</a>
 	</nav>
-	<nav id="foot-right">
-		<a href="/">Server Page</a>
-		<a href="/caillou">Caillou</a>
-	</nav>
+</footer>
 </body>
 </html>
