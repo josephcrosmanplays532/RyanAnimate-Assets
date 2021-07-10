@@ -1,0 +1,117 @@
+/***
+this css contains the swf page styling
+***/
+
+/**
+general
+**/
+html, body {
+	background: #696969;
+	margin: 0px;
+}
+
+/**
+main
+**/
+main {
+	padding: 0;
+}
+
+/**
+character page stuff
+**/
+#character_studio,
+#character_browser {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* character studio */
+#character_studio {
+	width: 960px;
+	height: 600px;
+}
+/* character browser */
+#character_browser {
+	width: 100%;
+	height: 100%;
+}
+
+/**
+other pages
+**/
+#video_studio,
+#video_player {
+	width: 100%;
+	height: 100%;
+}
+#preview_player {
+	height: 360px;
+	width: 640px;
+	display: block;
+	margin: auto;
+}
+
+/**
+popups
+**/
+/* popup */
+#preview_popup,
+#import_popup {
+	position: absolute;
+	background: #f2f7fc;
+	top: 50%;
+	left: 50%;
+	padding: 20px 40px;
+	border-radius: 4px;
+	box-shadow: 0 8px 12px 2px #00000065;
+	color: #525a6b;
+}
+/* preview popup */
+#preview_popup {
+	margin: -225px 0 0 -360px;
+}
+/* import popup */
+#import_popup {
+	margin: -154px 0 0 -220.5px;
+}
+#preview_popup h2,
+#import_popup h2  {
+	margin: 0px 0px 15px;
+	font-weight: 400;
+}
+/* popup container */
+#preview_popup_container,
+#import_popup_container {
+	background: #00000082;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+/* close button */
+.close-button {
+	position: absolute;
+	top: 10px;
+	right: 40px;
+	color: #4f5b93;
+}
+
+/**
+form stuff
+**/
+.button_import {
+	background: #4f5b93;
+	border: 1px solid #8892bf;
+	border-radius: 3px;
+	padding: 4px 10px;
+	color: #fff;
+	width: 100%;
+	margin-top: 20px;
+}
+::-webkit-file-upload-button {
+	background: #4f5b93;
+	border: 1px solid #8892bf;
+	border-radius: 3px;
+	padding: 4px 10px;
+	color: #fff;
+}
