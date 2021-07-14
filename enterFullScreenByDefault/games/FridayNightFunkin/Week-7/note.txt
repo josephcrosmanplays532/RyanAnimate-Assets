@@ -1,0 +1,1 @@
+this code is a fixed version comparing to week 6 witch lags very badly and crahes your computer easily.
